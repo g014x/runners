@@ -19,7 +19,8 @@ jobs:
          
     steps:
     - name: Build imagem docker
-      run: docker build -t minha-imagem .
+#      run: docker build -t minha-imagem .
+      run: pwd
     
     - name: Hello World
       run: echo -e " Helloooooo  World! "
