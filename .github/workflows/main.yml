@@ -14,7 +14,6 @@ jobs:
     services:
       docker:
         image: docker:stable
-        run: dokcer:dind
          
     steps:
     
