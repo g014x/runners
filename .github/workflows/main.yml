@@ -19,7 +19,6 @@ jobs:
         image: docker:stable
          
     steps:
-      working-directory: runners
     - name: Build imagem docker
       run: docker build -t minha-imagem .
     
@@ -28,3 +27,7 @@ jobs:
 
 
 
+#    defaults:
+#      run:
+#        shell: bash
+#        working-directory: /
