@@ -12,13 +12,14 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     container: docker:stable
-    
+
     services:
       docker:
         image: docker:stable
          
     steps:
-        
+    - name: Build imagem docker
+      run: docker build -t minha-imagem .
     
     - name: Hello World
       run: echo -e " Helloooooo  World! "
