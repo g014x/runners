@@ -13,10 +13,7 @@ jobs:
     
     runs-on: ubuntu-latest
     container: docker:stable
-    defaults:
-      run:
-        shell: bash
-        working-directory: /
+
     services:
       docker:
         image: docker:stable
