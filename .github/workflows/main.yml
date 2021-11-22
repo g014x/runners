@@ -20,7 +20,7 @@ jobs:
     steps:
     - name: Build imagem docker
 #      run: docker build -t minha-imagem .
-      run: cat /__w/runners/Dockerfile
+      run: cat /__w/runners/runners/Dockerfile
     
     - name: Hello World
       run: echo -e " Helloooooo  World! "
