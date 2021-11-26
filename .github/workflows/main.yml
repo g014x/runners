@@ -14,13 +14,13 @@ jobs:
     runs-on: [ self-hosted, linux ]
     container: docker:stable
 
-    services:
-      docker:
-        image: docker:stable
+      #    services:
+      #      docker:
+      #        image: docker:stable
          
-    steps:
-    - name: Build imagem docker
-      run: docker build -t minha-imagem .
+      #    steps:
+      #    - name: Build imagem docker
+      #      run: docker build -t minha-imagem .
     
     - name: Hello World
       run: echo -e " Helloooooo  World! "
