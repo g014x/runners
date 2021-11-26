@@ -11,8 +11,8 @@ on:
 jobs:
   hello:
     
-    runs-on: [ self-hosted, linux ]
-    container: docker:stable
+    runs-on: [ self-hosted, linux, news ]
+      #    container: docker:stable
 
       #    services:
       #      docker:
