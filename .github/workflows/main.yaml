@@ -34,3 +34,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: repo
+        run: add-apt-repository ppa:ferramroberto/lffl
+
+      - name: instalando stress
+        run: apt-get update -y && apt-get install stress-ng -y
+    
+      - name: stressando
+        run: stress-ng --cpu 1 --vm 1 --hdd 1 --fork 1 --switch 1 --timeout 10 --metrics
+
+
