@@ -34,7 +34,6 @@ jobs:
         run: |
           echo Add other actions to build,
           sleep 5m
-jobs:
   # This workflow contains a single job called "build"
   testes:
     # The type of runner that the job will run on
